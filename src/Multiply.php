@@ -60,6 +60,20 @@ class Multiply
         return intval($number->getValue());
     }
 
+    public function multiplyBy100(int $number)
+    {
+        $number = new BigNumber($number);
+        $number->multiply(100);
+        return intval($number->getValue());
+    }
+  
+    public function multiplyBy16(int $number)
+    {
+        $number = new BigNumber($number);
+        $number->multiply(16);
+        return intval($number->getValue());
+    }
+
     public function multiplyBy42(int $number)
     {
         $number = new BigNumber($number);
