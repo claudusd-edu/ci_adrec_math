@@ -22,5 +22,5 @@ class MultiplyBy5CommandTest extends TestCase
      ]);
      $output = $commandTester->getDisplay();
      $this->assertSame("5 * 5 = 25".PHP_EOL, $output);
-   }
+  }
 }
